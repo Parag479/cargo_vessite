@@ -2284,6 +2284,34 @@ We are always here to help out in whatever way we can!</p>
     }
     </script>
 
+    <script>
+    // Function to calculate price based on weight
+    function calculatePrice() {
+        const weight = document.getElementById('weight').value;
+        const price = weight ? (weight / 5000).toFixed(2) : 0; // Divide weight by 5000
+        document.getElementById('price').innerText = price;
+    }
+
+    // Function to handle form submission
+    function submitQuote() {
+        const name = document.getElementById('name').value;
+        const number = document.getElementById('number').value;
+        const weight = document.getElementById('weight').value;
+        const length = document.getElementById('length').value;
+        const height = document.getElementById('height').value;
+        const width = document.getElementById('width').value;
+        const price = document.getElementById('price').innerText;
+
+        // Validate all fields
+        if (name && number && weight && length && height && width) {
+            // Display the details in an alert or send them to a server
+            alert(`Quote Details:\n\nName: ${name}\nNumber: ${number}\nWeight: ${weight} kg\nDimensions: ${length}x${width}x${height} cm\nPrice: $${price}`);
+        } else {
+            alert('Please fill out all fields.');
+        }
+    }
+</script>
+
     </body>
 
 <!-- Mirrored from templates.hibootstrap.com/BBC/default/index-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Dec 2020 08:43:39 GMT -->
