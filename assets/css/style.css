@@ -1936,8 +1936,8 @@ h3 {
   background: rgba(0, -105, 95, 0.5);
   /* padding: 45px 30px; */padding: 10px 30px; 
   width:100%;
- /* margin-top: 47%;  */margin-top: 40%; 
-  
+ /* margin-top: 47%;  */margin-top: 34%; 
+  border-radius: 10px;
 }
 .flexslider{height: 600px;}
 /* Banner CSS End */
