@@ -2287,28 +2287,21 @@ We are always here to help out in whatever way we can!</p>
     <script>
     // Function to calculate price based on weight
     function cal() {
-        const weight = document.getElementById('weight').value;
-        const price = weight ? (weight / 5000).toFixed(2) : 0; // Divide weight by 5000
+        const weight = parseFloat(document.getElementById('weight').value) || 0;
+        const length = parseFloat(document.getElementById('length').value) || 0;
+        const height = parseFloat(document.getElementById('height').value) || 0;
+        const width = parseFloat(document.getElementById('breight').value) || 0;
+
+        // Calculate volumetric weight
+        const volumetricWeight = (length * height * width) / 5000;
+
+        // Use the greater of actual weight or volumetric weight
+        const chargeableWeight = Math.max(weight, volumetricWeight);
+
+        // Calculate price based on chargeable weight
+        const price = chargeableWeight.toFixed(2); // Round to 2 decimal places
+
         document.getElementById('price').innerText = price;
-    }
-
-    // Function to handle form submission
-    function submitQuote() {
-        const name = document.getElementById('name').value;
-        const number = document.getElementById('number').value;
-        const weight = document.getElementById('weight').value;
-        const length = document.getElementById('length').value;
-        const height = document.getElementById('height').value;
-        const width = document.getElementById('width').value;
-        const price = document.getElementById('price').innerText;
-
-        // Validate all fields
-        if (name && number && weight && length && height && width) {
-            // Display the details in an alert or send them to a server
-            alert(`Quote Details:\n\nName: ${name}\nNumber: ${number}\nWeight: ${weight} kg\nDimensions: ${length}x${width}x${height} cm\nPrice: $${price}`);
-        } else {
-            alert('Please fill out all fields.');
-        }
     }
 </script>
 
