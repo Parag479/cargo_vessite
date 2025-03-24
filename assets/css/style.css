@@ -2281,7 +2281,7 @@ h3 {
 }
 
 .contact-section .contact-img {
-  background-image: url(../img/contact.jpg);
+  background-image: url(../img/contact.jpeg);
   background-position: center center;
   background-size: cover;
   height: 100%;
@@ -3663,7 +3663,39 @@ h3 {
   text-align: center;
 }
 
-.sk-folding-cube {
+
+  .airplane-loader {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            }
+
+            .airplane-image {
+            position: absolute;
+            animation: fly 2s linear infinite;
+            width: 50px;
+            }
+
+            .airplane-trail {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #ccc;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            }
+
+            @keyframes fly {
+            0% {
+                left: -50px;
+            }
+            100% {
+                left: 100%;
+            }
+            }
+/* .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
   height: 40px;
@@ -3759,7 +3791,7 @@ h3 {
             transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }
-}
+} */
 
 /* PreLoader CSS End */
 /* Back Top CSS Start */
