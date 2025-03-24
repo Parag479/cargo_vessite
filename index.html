@@ -157,6 +157,16 @@
 
       /* Adjustments for mobile view */
       @media (max-width: 768px) {
+
+         container  {
+            padding-left: 0;
+            padding-right: 0;
+         }
+
+         .flexslider {
+
+            height: 204px;
+         }
          .navbar-area {
             padding: 0;
          }
@@ -175,10 +185,10 @@
             padding-right: 0;
          }
 
-         .footer-area {
+         /* .footer-area {
             padding-left: 15px;
             padding-right: 15px;
-         }
+         } */
 
          .footer-widget ul {
             padding: 0;
@@ -221,7 +231,7 @@
          </div>
          <!-- Menu For Desktop Device -->
          <div class="main-nav"style=" background-image: url(./assets/img/navbg.jpg); background-size: cover;">
-            <div class="container">
+            <div class="container-fluid">
                <nav class="navbar navbar-expand-lg navbar-light">
                   <a class="navbar-brand" href="">
                   <img src="./assets/img/cargo.png" alt="logo" style="width:35%; border-radius: 5px;">
@@ -400,7 +410,7 @@
       <div class="banner-style-two banner-bg">
          <div class="d-table">
             <div class="d-table-cell">
-               <div class="container"style="max-width:fit-content;">
+               <div class="container-fluid"style="max-width:fit-content; padding-left: 0px; padding-right:0px ;">
                   <div class="row ">
                      <div class="flexslider">
                         <script>
