@@ -172,26 +172,26 @@
             padding-left: 0;
             padding-right: 0;
          }
-
+/* 
          .footer-area {
             padding-left: 15px;
             padding-right: 15px;
          }
-      }
+      } */
 
       /* Fix slider image responsiveness */
-      .flexslider img {
+      /* .flexslider img {
          width: 100%;
          height: auto;
          object-fit: cover;
-      }
+      } */
 
       /* Footer adjustments for mobile */
       @media (max-width: 768px) {
-         .footer-area {
+         /* .footer-area {
             text-align: center;
             padding: 20px 15px;
-         }
+         } */
 
          .footer-widget ul {
             padding: 0;
@@ -208,6 +208,29 @@
          }
       }
    </style>
+   <style>
+      /* Ensure slider images are responsive */
+      .flexslider img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+      }
+
+      /* Adjust slider container for mobile */
+      @media (max-width: 768px) {
+         .flexslider {
+            margin: 0 auto;
+            padding: 0;
+         }
+
+         .flexslider img {
+            max-width: 100%;
+            height: auto;
+         }
+      }
+   </style>
+
+   
    <body oncontextmenu="return false">
       <!-- PreLoader Start -->
       <div class="loader-content">
