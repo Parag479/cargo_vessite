@@ -116,6 +116,68 @@
       } */
       .dropdown1 a:hover {background-color: #ddd;}
       .show {display: block;}
+      /* Ensure no horizontal overflow */
+      body {
+         margin: 0;
+         padding: 0;
+         overflow-x: hidden;
+      }
+
+      /* Fix container padding for mobile */
+      .container {
+         padding-left: 15px;
+         padding-right: 15px;
+      }
+
+      /* Ensure images are responsive */
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+
+      /* Fix navbar spacing */
+      .navbar-nav {
+         margin: 0;
+         padding: 0;
+      }
+
+      /* Adjust dropdown menu for mobile */
+      .dropdown-content {
+         margin-left: 0 !important;
+         width: auto !important;
+      }
+
+      /* Fix banner image overflow */
+      .banner-style-two img {
+         width: 100%;
+         height: auto;
+      }
+
+      /* Ensure no extra margin/padding on mobile */
+      @media (max-width: 768px) {
+         .navbar-area {
+            padding: 0;
+         }
+
+         .main-nav {
+            margin: 0;
+         }
+
+         .row {
+            margin-left: 0;
+            margin-right: 0;
+         }
+
+         .col-lg-6, .col-lg-4, .col-lg-3 {
+            padding-left: 0;
+            padding-right: 0;
+         }
+
+         .footer-area {
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+      }
    </style>
    <body oncontextmenu="return false">
       <!-- PreLoader Start -->
@@ -2209,6 +2271,7 @@
                  sessionStorage.setItem("j","");
              }
              
+         
          
          
          
