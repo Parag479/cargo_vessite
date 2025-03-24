@@ -123,7 +123,13 @@
          overflow-x: hidden;
       }
 
-      /* Fix container padding for mobile */
+      /* Fix container padding for all views */
+      .container {
+         padding-left: 15px;
+         padding-right: 15px;
+         max-width: 1200px;
+         margin: 0 auto;
+      }
 
       /* Ensure images are responsive */
       img {
@@ -143,21 +149,14 @@
          width: auto !important;
       }
 
-      /* Fix banner image overflow */
+      /* Fix banner image responsiveness */
       .banner-style-two img {
          width: 100%;
          height: auto;
       }
 
-      /* Ensure no extra margin/padding on mobile */
+      /* Adjustments for mobile view */
       @media (max-width: 768px) {
-
-         .container {
-         padding-left: 0px;
-         padding-right: 0px;
-         margin-top: 60px;
-      }
-
          .navbar-area {
             padding: 0;
          }
@@ -175,26 +174,11 @@
             padding-left: 0;
             padding-right: 0;
          }
-/* 
+
          .footer-area {
             padding-left: 15px;
             padding-right: 15px;
          }
-      } */
-
-      /* Fix slider image responsiveness */
-      /* .flexslider img {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-      } */
-
-      /* Footer adjustments for mobile */
-      @media (max-width: 768px) {
-         /* .footer-area {
-            text-align: center;
-            padding: 20px 15px;
-         } */
 
          .footer-widget ul {
             padding: 0;
@@ -208,28 +192,6 @@
          .footer-social a {
             margin: 0 5px;
             display: inline-block;
-         }
-      }
-   </style>
-   <style>
-      /* Ensure slider images are responsive */
-      .flexslider img {
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-      }
-
-      /* Adjust slider container for mobile */
-      @media (max-width: 768px) {
-         .flexslider {
-            margin: 0 auto;
-            padding: 0;
-            height: 214px;
-         }
-
-         .flexslider img {
-            max-width: 100%;
-            height: auto;
          }
       }
    </style>
@@ -2200,7 +2162,7 @@
          <div class="lines">
             <div class="line"></div>
             <div class="line"></div>
-            <div class="line"></div>
+            <div a="line"></div>
          </div>
       </footer>
       <!-- Footer Area End -->
