@@ -178,6 +178,35 @@
             padding-right: 15px;
          }
       }
+
+      /* Fix slider image responsiveness */
+      .flexslider img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+      }
+
+      /* Footer adjustments for mobile */
+      @media (max-width: 768px) {
+         .footer-area {
+            text-align: center;
+            padding: 20px 15px;
+         }
+
+         .footer-widget ul {
+            padding: 0;
+            list-style: none;
+         }
+
+         .footer-widget ul li {
+            margin-bottom: 10px;
+         }
+
+         .footer-social a {
+            margin: 0 5px;
+            display: inline-block;
+         }
+      }
    </style>
    <body oncontextmenu="return false">
       <!-- PreLoader Start -->
@@ -2271,6 +2300,7 @@
                  sessionStorage.setItem("j","");
              }
              
+         
          
          
          
